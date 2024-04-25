@@ -5,7 +5,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest --testEnvironment=node --watchAll --verbose --coverage"
+    "dev": "nodemon index.js",
+    "test": "jest --testEnvironment=node --watchAll --verbose --coverage",
+    "deploy": "jest --testEnvironment=node --verbose --detectOpenHandles",
+    "build": "set CI=false && npm i"
   },
   "keywords": [],
   "author": "",
