@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   cicd:
-    runs-on: windows-10
+    runs-on: windows-latest
     strategy:
       matrix:
         mongodb-version: [6.0.4]
