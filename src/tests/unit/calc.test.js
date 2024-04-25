@@ -28,7 +28,7 @@ describe("Calculadora", () => {
 
     it("Em uma divisão onde o divisor seja igual a zero, deve levantar uma exceção.", () => {
         expect(() => {
-            Division(10, 2);
+            Division(10, 3);
         }).toThrow(RangeError);
     });
 });
